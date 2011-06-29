@@ -1,7 +1,7 @@
 <?php
-    include_once "common/base.php";
-    $pageTitle = "Register";
     include_once "common/header.php";
+    $pageTitle = "Sign-up";
+
  
     if(!empty($_POST['username'])):
         include_once "inc/class.users.inc.php";
@@ -10,7 +10,7 @@
     else:
 ?>
  
-        <h2>Sign up</h2>
+        <h1>Sign up</h1>
         <form method="post" action="signup.php" id="registerform">
             <div>
                 <label for="username">Email:</label>
@@ -21,5 +21,4 @@
  
 <?php
     endif;
-    include_once 'common/close.php';
 ?>
