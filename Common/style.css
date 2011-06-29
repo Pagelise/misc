@@ -1,74 +1,160 @@
-
-body,h1,h2,p {
-  margin-left:200px;
-  margin-right:200px;
-}
-
-body {
-  background-image:url('../images/background.gif');
-  color:brown;
-}
-
-img.border {
-  display:block;
-  width: 173px;
-  height:100 px;
-  margin-top:38px;
-  margin-left:10px;
-  background: url("../images/buttons.gif") 0 0;  }
-
-#border
-{
-  display: block;
-  width: 173px;
-  height: 30px;
-  background: url("../images/buttons.gif") 0 0;
-
-}
-
-#border:hover
-{ 
-  background-position: 0 -38px;
-  letter-spacing:6px;
-}
-
-#border span
-{
-  position: absolute;
-  top: -999em;
-}
-
-img.mainlogo {
-  margin-left:200px;
-  margin-top:100px;
+div.main { 
+  text-align:center;
+  color:white;
+  width:1000px;
+  height: 600px;
   position:absolute;
-  z-index:-1;
-}
+  margin-left:175px;
+  margin-bottom:100px;
+  border: white solid 2px;
+  border-top:none;
+  border-bottom:none;
+  padding:20px;
+  background: url(../images/brn2.gif); }
 
-p {
-  margin:auto;
-  position:relative;
-  font-family:"Times New Roman";
-  font-size:20px;
-}
+div.task {
+  margin-left:200px;
+  margin-top:200px;
+  float-left; }
 
-ul
-{
+div.inner {
+  margin-left:200px;
+  margin-top:200px; }
+
+h1 {
   position:absolute;
-  list-style-type:none;
-  margin-top:140px;
-  margin-left:100px;
-  padding-right:0;
-}
-a.button:link,a:visited
-{
-  font-size:20px;
-  display:block;
   font-weight:bold;
   color:#FFFFFF;
-  width:172px;
-  text-align:center;
+  left:400px; }
+
+body {
+  color:white;
+  background: url(../images/background2.gif); }
+
+#nav {
+  display: block;
+  width: 145px;
+  height: 23px;
+  background: url("../images/buttonsprite.gif") 0 0;
+  list-style-type:none;
+  font-size:15px;
+  font-weight:bold;
+  color:white;
+  text-align:left;
   padding:4px;
   text-decoration:none;
   text-transform:uppercase;
- }
+}
+
+#nav:hover { 
+  background-position: 0px -31.5px;}
+
+#nav span {
+  position: absolute;
+  top: -999em; }
+
+#task {
+  display: block;
+  width: 97px;
+  height: 97px;
+  border:none;
+  background: url("../images/taskboxsprite.gif") 0 0; }
+
+#task:hover { 
+  background-position: 0px -106px;
+  letter-spacing:6px; }
+
+#task span {
+  position: absolute;
+  top: -999em; }
+
+#taskdue {
+  display: block;
+  width: 97px;
+  height: 97px;
+  border:none;
+  background: url("../images/taskboxsprite.gif") -109px 0px; }
+
+#taskdue:hover { 
+  background-position: -109px -106px;
+  letter-spacing:6px; }
+
+#taskdue span {
+  position: absolute;
+  top: -999em; }
+
+#taskOverDue {
+  display: block;
+  width: 97px;
+  height: 97px;
+  border:none;
+  background: url("../images/taskboxsprite.gif") -217px 0px; }
+
+#taskOverDue:hover { 
+  background-position: -217px -106px;
+  letter-spacing:6px; }
+
+#taskOVerDue span {
+  position: absolute;
+  top: -999em; }
+
+img.bottomborder {
+  position:absolute;
+  right:0px;
+  height:30px;
+  width:inherit;
+  background: url(../images/buttons.gif); 
+}
+
+#arrow.aright {
+  right:300px;
+  position:absolute;
+  display: block;
+  width: 52.25px;
+  height: 39px;
+  background: url("../images/arrowsprite.gif") no-repeat;
+  background-position: -125px 0px; }
+
+#arrow.aleft {
+  left:300px;
+  position:absolute;
+  margin-top:
+  display: block;
+  width: 52.25px;
+  height: 39px;
+  background: url("../images/arrowsprite.gif") no-repeat -125px -82px; }
+
+#arrow.aright:hover { 
+  background-position: -125px -40px; }
+
+#arrow.aleft:hover { 
+  background-position: -125px -123px; }
+
+#arrow span {
+  position: absolute;
+  top: -999em; }
+
+img.mainlogo {
+  position:absolute;
+  top:20px;
+  left:20px;
+  z-index:2;
+  width:107px;
+  height:138.5px; }
+
+ul {
+  position:absolute;
+  list-style-type:none;
+  top: 230px; }
+
+a.button:link,a.button:visited { 
+  list-style-type:none;
+  font-size:15px;
+  display:block;
+  font-weight:bold;
+  color:white;
+  width:172px;
+  text-align:left;
+  padding:4px;
+  text-decoration:none;
+  text-transform:uppercase;}
