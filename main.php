@@ -1,21 +1,10 @@
 <?php
-    include_once 'common/header.php';
-?>
+    if(isset($_SESSION['LoggedIn']) && isset($_SESSION['Username'])
+        && $_SESSION['LoggedIn']==1):
 
-<body>
+  include_once 'maintenance.php';
 
-<img class="mainlogo" src="images/SClogo.gif"/img>
+else:
+  include_once 'login.php';               
 
-<ul>
-<li><a id="border" class="button" href="linkTo.php">Log in</a></li>
-<li><a id="border" class="button" href="linkTo.php">Home</a></li>
-<li><a id="border" class="button" href="linkTo.php">Tasks</a></li>
-<li><a id="border" class="button" href="linkTo.php">Schedule</a></li>
-<li><a id="border" class="button" href="linkTo.php">Week</a></li>
-<li><a id="border" class="button" href="linkTo.php">Today</a></li>
-<li><a id="border" class="button" href="linkTo.php">Grocery</a></li></ul>
-
-</body>
-
-
-</html>
+endif; ?>

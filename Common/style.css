@@ -85,47 +85,59 @@ body {
   top: -999em; }
 
 #task {
+  list-style-type:none;
+  font-size:15px;
+  display:block;
+  font-weight:bold;
+  color:white;
+  text-align:left;
+  padding:4px;
+  text-decoration:none;
+  text-transform:uppercase;}
+
+#task.good {
   display: block;
   width: 97px;
   height: 97px;
   border:none;
-  background: url("../images/taskboxsprite.gif") 0 0; }
+  background: url("../images/taskboxsprite.gif") 0 0;
+}
 
-#task:hover { 
+#task.good:hover { 
   background-position: 0px -106px;
   letter-spacing:6px; }
 
-#task span {
+#task.good span {
   position: absolute;
   top: -999em; }
 
-#taskdue {
+#task.due {
   display: block;
   width: 97px;
   height: 97px;
   border:none;
   background: url("../images/taskboxsprite.gif") -109px 0px; }
 
-#taskdue:hover { 
+#task.due:hover { 
   background-position: -109px -106px;
   letter-spacing:6px; }
 
-#taskdue span {
+#task.due span {
   position: absolute;
   top: -999em; }
 
-#taskOverDue {
+#task.overdue {
   display: block;
   width: 97px;
   height: 97px;
   border:none;
   background: url("../images/taskboxsprite.gif") -217px 0px; }
 
-#taskOverDue:hover { 
+#task.overdue:hover { 
   background-position: -217px -106px;
   letter-spacing:6px; }
 
-#taskOVerDue span {
+#task.overdue span {
   position: absolute;
   top: -999em; }
 

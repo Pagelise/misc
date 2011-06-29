@@ -9,7 +9,7 @@
 <body>
 
 <img class="mainlogo" src="images/coffeecup.gif"/>
-
+<p>Welcome $u</p>
 <div class="taskarrows">
 <h1><?php echo $pageTitle; ?></h1>
 <a id="arrow" class="aleft" href="personal.php"></a>
@@ -18,9 +18,9 @@
 
 <div class="main">
 
-<a id="task" class="button" href="linkTo.php"></a>
-<a id="taskdue" class="button" href="linkTo.php"></a>
-<a id="taskOverDue" class="button" href="linkTo.php"></a>
+<a id="task" class="overdue" href="linkTo.php"></a>
+<a id="task" class="due" href="linkTo.php"></a>
+<a id="task" class="good" href="linkTo.php"></a>
 <form action="welcome.php" method="post">
 
 <div class="login">
